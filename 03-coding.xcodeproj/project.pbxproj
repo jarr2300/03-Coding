@@ -15,6 +15,7 @@
 		1E4578E021D06153000176D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E4578DE21D06153000176D8 /* LaunchScreen.storyboard */; };
 		1E4578EB21D06153000176D8 /* _3_codingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4578EA21D06153000176D8 /* _3_codingTests.swift */; };
 		1E4578F621D06153000176D8 /* _3_codingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4578F521D06153000176D8 /* _3_codingUITests.swift */; };
+		1E45790421D063D0000176D8 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E45790321D063D0000176D8 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		1E4578F121D06153000176D8 /* 03-codingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "03-codingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E4578F521D06153000176D8 /* _3_codingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _3_codingUITests.swift; sourceTree = "<group>"; };
 		1E4578F721D06153000176D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E45790321D063D0000176D8 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +101,8 @@
 		1E4578D221D0614F000176D8 /* 03-coding */ = {
 			isa = PBXGroup;
 			children = (
+				1E45790521D063F1000176D8 /* Controllers */,
 				1E4578D321D06150000176D8 /* AppDelegate.swift */,
-				1E4578D521D06150000176D8 /* FirstViewController.swift */,
-				1E4578D721D06150000176D8 /* SecondViewController.swift */,
 				1E4578D921D06150000176D8 /* Main.storyboard */,
 				1E4578DC21D06153000176D8 /* Assets.xcassets */,
 				1E4578DE21D06153000176D8 /* LaunchScreen.storyboard */,
@@ -126,6 +127,16 @@
 				1E4578F721D06153000176D8 /* Info.plist */,
 			);
 			path = "03-codingUITests";
+			sourceTree = "<group>";
+		};
+		1E45790521D063F1000176D8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1E4578D521D06150000176D8 /* FirstViewController.swift */,
+				1E4578D721D06150000176D8 /* SecondViewController.swift */,
+				1E45790321D063D0000176D8 /* ThirdViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +272,7 @@
 			files = (
 				1E4578D821D06150000176D8 /* SecondViewController.swift in Sources */,
 				1E4578D421D06150000176D8 /* AppDelegate.swift in Sources */,
+				1E45790421D063D0000176D8 /* ThirdViewController.swift in Sources */,
 				1E4578D621D06150000176D8 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
