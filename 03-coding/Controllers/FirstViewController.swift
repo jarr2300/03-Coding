@@ -16,6 +16,7 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var sliderAge: UISlider!
     
+    
     var userAge = 18
     var userName = ""
     

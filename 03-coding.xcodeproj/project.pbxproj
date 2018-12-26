@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E44253D21D3E2CD004720A6 /* FontDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E44253C21D3E2CD004720A6 /* FontDetailViewController.swift */; };
 		1E4578D421D06150000176D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4578D321D06150000176D8 /* AppDelegate.swift */; };
 		1E4578D621D06150000176D8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4578D521D06150000176D8 /* FirstViewController.swift */; };
 		1E4578D821D06150000176D8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4578D721D06150000176D8 /* SecondViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E44253C21D3E2CD004720A6 /* FontDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontDetailViewController.swift; sourceTree = "<group>"; };
 		1E4578D021D0614F000176D8 /* 03-coding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "03-coding.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E4578D321D06150000176D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E4578D521D06150000176D8 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				1E4578D521D06150000176D8 /* FirstViewController.swift */,
 				1E4578D721D06150000176D8 /* SecondViewController.swift */,
 				1E45790321D063D0000176D8 /* ThirdViewController.swift */,
+				1E44253C21D3E2CD004720A6 /* FontDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E44253D21D3E2CD004720A6 /* FontDetailViewController.swift in Sources */,
 				1E4578D821D06150000176D8 /* SecondViewController.swift in Sources */,
 				1E4578D421D06150000176D8 /* AppDelegate.swift in Sources */,
 				1E45790421D063D0000176D8 /* ThirdViewController.swift in Sources */,
