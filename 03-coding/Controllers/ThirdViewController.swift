@@ -15,6 +15,8 @@ class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     var fonts : [String: [String]] = [:]
     
+    var ordenar : [String] = []
+    
     @IBOutlet weak var tableView: UITableView!
     
     
@@ -27,10 +29,15 @@ class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         for fam in families{
             
-            fonts[fam] = UIFont.fontNames(forFamilyName: fam)
+            // fonts[fam] = UIFont.fontNames(forFamilyName: fam)  // con esta linea no se ordenarían las fuentas de cada familia
+            
+             ordenar = UIFont.fontNames(forFamilyName: fam)         // guarda el array de las fonts en una variable para ordenar
+             fonts[fam] = ordenar.sorted(by: { return $0 < $1 })    //guarda el Array de fuentes ya ordenado en su familia
+            
+           
+            
         }
-        
-        print(fonts)
+       
         
         // Do any additional setup after loading the view.
     }
@@ -38,15 +45,22 @@ class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     
     
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+       
+        if segue.identifier == "ShowFontsForFamily" {
+            
+            let navController = segue.destination as! UINavigationController
+            let destinationVC = navController.topViewController as! FontDetailViewController
+            let idx = self.tableView.indexPathForSelectedRow!.row
+            destinationVC.familiName = self.families[idx]
+            destinationVC.fonts = self.fonts[self.families[idx]]!
+        }
     }
-    */
+    
 
 // MARK: - Métodos del protocolo UITableDataSource
     
