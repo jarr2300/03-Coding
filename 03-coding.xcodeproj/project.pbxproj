@@ -17,6 +17,9 @@
 		1E4578EB21D06153000176D8 /* _3_codingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4578EA21D06153000176D8 /* _3_codingTests.swift */; };
 		1E4578F621D06153000176D8 /* _3_codingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4578F521D06153000176D8 /* _3_codingUITests.swift */; };
 		1E45790421D063D0000176D8 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E45790321D063D0000176D8 /* ThirdViewController.swift */; };
+		1E7CD25E21D6868A00556C6E /* IMCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7CD25D21D6868A00556C6E /* IMCViewController.swift */; };
+		1E7CD25F21D6868A00556C6E /* IMCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7CD25D21D6868A00556C6E /* IMCViewController.swift */; };
+		1E7CD26021D6868B00556C6E /* IMCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7CD25D21D6868A00556C6E /* IMCViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,7 @@
 		1E4578F521D06153000176D8 /* _3_codingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _3_codingUITests.swift; sourceTree = "<group>"; };
 		1E4578F721D06153000176D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E45790321D063D0000176D8 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		1E7CD25D21D6868A00556C6E /* IMCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMCViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,7 @@
 				1E4578D721D06150000176D8 /* SecondViewController.swift */,
 				1E45790321D063D0000176D8 /* ThirdViewController.swift */,
 				1E44253C21D3E2CD004720A6 /* FontDetailViewController.swift */,
+				1E7CD25D21D6868A00556C6E /* IMCViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E7CD25E21D6868A00556C6E /* IMCViewController.swift in Sources */,
 				1E44253D21D3E2CD004720A6 /* FontDetailViewController.swift in Sources */,
 				1E4578D821D06150000176D8 /* SecondViewController.swift in Sources */,
 				1E4578D421D06150000176D8 /* AppDelegate.swift in Sources */,
@@ -285,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E7CD25F21D6868A00556C6E /* IMCViewController.swift in Sources */,
 				1E4578EB21D06153000176D8 /* _3_codingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E7CD26021D6868B00556C6E /* IMCViewController.swift in Sources */,
 				1E4578F621D06153000176D8 /* _3_codingUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
