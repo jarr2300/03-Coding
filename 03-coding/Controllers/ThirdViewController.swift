@@ -38,9 +38,9 @@ class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 
                 print("\(fam)")
                 print("REMOVE : \(fam)")
-                families = families.filter{$0 != fam} // ELIMINA LA FAMILIA DEL ARRAY ¡¡¡ MUY MUY BUENO
-                // families.remove(at: fam)
-                //print("REMOVE : \(fam)")
+                families = families.filter{$0 != fam}   // Recorre el ARRAY families ( $0 ) dejando intacto lo que sea distinto de fam en este caso
+                                                        // Resumiendo --> Borra lo que sea igual a fam ( en esa igualdad )
+                
                 print("\(fam)")
                 
             }
