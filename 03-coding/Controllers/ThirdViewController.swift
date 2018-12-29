@@ -28,13 +28,30 @@ class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
         families = UIFont.familyNames.sorted(by: { return $0 < $1 })
         
         for fam in families{
+            //var n = ""
+           // print("Familia : \(families)")
+           // print("fam : \(fam)")
             
             // fonts[fam] = UIFont.fontNames(forFamilyName: fam)  // con esta linea no se ordenarían las fuentas de cada familia
             
              ordenar = UIFont.fontNames(forFamilyName: fam)         // guarda el array de las fonts en una variable para ordenar
-             fonts[fam] = ordenar.sorted(by: { return $0 < $1 })    //guarda el Array de fuentes ya ordenado en su familia
             
-           
+            
+            if ordenar.last == nil { // Busca la familia SIN FUENTES
+                
+                print("\(fam)")
+                print("REMOVE : \(fam)")
+                families = families.filter{$0 != fam} // ELIMINA LA FAMILIA DEL ARRAY ¡¡¡ MUY MUY BUENO
+                // families.remove(at: fam)
+                //print("REMOVE : \(fam)")
+                print("\(fam)")
+                
+            }
+            
+            // print("fonts[fam] : \(fonts[fam])")
+            
+             fonts[fam] = ordenar.sorted(by: { return $0 < $1 })    //guarda el Array de fuentes ya ordenado en su familia
+            //n += 1
             
         }
        

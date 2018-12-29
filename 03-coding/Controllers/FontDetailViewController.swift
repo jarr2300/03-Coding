@@ -47,6 +47,8 @@ class FontDetailViewController: UIViewController, UIPickerViewDelegate, UIPicker
         if fonts.count == 0 {
             self.pickerFonts.isHidden = true
         }
+       
+        
         self.textView.font = UIFont(name: fonts[0], size: CGFloat(size))
         
         // sizeText.text = ""
