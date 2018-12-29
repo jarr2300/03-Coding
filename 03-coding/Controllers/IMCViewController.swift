@@ -35,7 +35,7 @@ class IMCViewController: UIViewController {
     }
     
     
-    /// IMC = peso (kg)/estatura^2 (m)
+    /// Calculo de Indice de masa corporal IMC = peso (kg)/estatura^2 (m)
     
 
 
