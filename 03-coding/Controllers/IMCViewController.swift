@@ -54,6 +54,8 @@ class IMCViewController: UIViewController {
         edad = Int(sender.value)
         calcularIMC()
     }
+    /////
+    
     
     
     @IBAction func pesoSlider(_ sender: UISlider) {
