@@ -52,22 +52,26 @@ class IMCViewController: UIViewController {
     @IBAction func edadSlider(_ sender: UISlider) {
         edadLabel.text = "\(Int(sender.value))"
         edad = Int(sender.value)
+        calcularIMC()
     }
     
     
     @IBAction func pesoSlider(_ sender: UISlider) {
         pesoLabel.text = "\(Int(sender.value))"
         pesoKg = Int(sender.value)
+        calcularIMC()
     }
     
     
     @IBAction func alturaSlider(_ sender: UISlider) {
         alturaLabel.text = "\(Int(sender.value))"
         alturaM = Double((sender.value)/100)
+        calcularIMC()
     }
     
     @IBAction func calculoIMC(_ sender: UIButton) {
         calcularIMC()
+        showResults ()
     }
     
     func calcularIMC(){

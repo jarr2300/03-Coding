@@ -28,9 +28,6 @@ class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
         families = UIFont.familyNames.sorted(by: { return $0 < $1 })
         
         for fam in families{
-            //var n = ""
-           // print("Familia : \(families)")
-           // print("fam : \(fam)")
             
             // fonts[fam] = UIFont.fontNames(forFamilyName: fam)  // con esta linea no se ordenarían las fuentas de cada familia
             
