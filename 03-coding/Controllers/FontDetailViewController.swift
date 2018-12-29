@@ -48,8 +48,10 @@ class FontDetailViewController: UIViewController, UIPickerViewDelegate, UIPicker
             self.pickerFonts.isHidden = true
         }
        
+        self.textView.font = UIFont(name: familiName, size: CGFloat(size))
+       // self.textView.font = UIFont(name: fonts[0], size: CGFloat(size))
         
-        self.textView.font = UIFont(name: fonts[0], size: CGFloat(size))
+        
         
         // sizeText.text = ""
         size = Int(self.stepperVal.value)
@@ -73,8 +75,13 @@ class FontDetailViewController: UIViewController, UIPickerViewDelegate, UIPicker
     }
     */
 
+    //  @IBAction func doneButtonPress(_ sender: UIBarButtonItem) {
+    //self.dismiss(animated: true, completion: nil )
+    // }
+    
+    
     @IBAction func doneButtonPress(_ sender: UIBarButtonItem) {
-        self.dismiss(animated: true, completion: nil )
+        self.dismiss(animated: true)
         
     }
     

@@ -33,7 +33,7 @@ class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
             
              ordenar = UIFont.fontNames(forFamilyName: fam)         // guarda el array de las fonts en una variable para ordenar
             
-            
+            /*
             if ordenar.last == nil { // Busca la familia SIN FUENTES
                 
                 print("\(fam)")
@@ -44,7 +44,7 @@ class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 print("\(fam)")
                 
             }
-            
+            */
             // print("fonts[fam] : \(fonts[fam])")
             
              fonts[fam] = ordenar.sorted(by: { return $0 < $1 })    //guarda el Array de fuentes ya ordenado en su familia
